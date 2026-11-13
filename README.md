@@ -1,142 +1,144 @@
-# Awesome-Remote-Device-Debugging-Devtools
+<div align="center">
 
-# Awesome Remote Device Debugging & DevTools
+<img src="./assets/banner.svg" alt="Awesome Remote Device Debugging and DevTools Banner" width="100%" />
 
-> A curated list of top Remote Device Debugging and DevTools platforms — both SaaS/Hosted commercial solutions and open-source alternatives for inspecting, controlling, and debugging web pages, apps, and network traffic on remote devices.
-> 🌟 Star this repo if you find it useful! 🌟
+# 📱 Awesome Remote Device Debugging & DevTools 🛠️
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Remote-Device-Debugging-Devtools/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Remote-Device-Debugging-Devtools/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+> 🚀 A curated directory of top-tier **Remote Device Debugging**, **DevTools**, and **Network Traffic Inspection** platforms — featuring enterprise SaaS real-device testing clouds, native HTTP/HTTPS MITM proxies, ADB bridge utilities, and self-hosted open-source device labs for Android, iOS, and WebViews.
+
+⭐ **Star this repository if you find it helpful!** ⭐
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [BrowserStack Remote Debugging](#browserstack-remote-debugging)
-  - [Proxyman](#proxyman)
-  - [Charles Proxy](#charles-proxy)
-  - [Fiddler](#fiddler)
-- [Open-Source Software](#-open-source-software)
-  - [Device Farmer STF](#device-farmer-stf)
-  - [tapflow](#tapflow)
-  - [nectoproxy](#nectoproxy)
-  - [Rockxy](#rockxy)
-  - [Remote WebView Debugger](#remote-webview-debugger)
-  - [adb-tui](#adb-tui)
-  - [ios-safari-remote-debug-kit](#ios-safari-remote-debug-kit)
-  - [spy-debugger](#spy-debugger)
-  - [cdp-ninja](#cdp-ninja)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [⚖️ Comparison at a Glance](#️-comparison-at-a-glance)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global cloud testing and software debugging market is estimated at **$13 billion to $15 billion in 2026** and is projected to expand to over **$45 billion by 2034**, driven by a steady compound annual growth rate (**CAGR of ~12% to 13%**).
+
+The sector demonstrates a **moderately fragmented and bifurcated market structure**: large-scale commercial real-device testing clouds (such as BrowserStack and Sauce Labs) dominate enterprise cross-browser CI/CD pipelines, while local HTTP/HTTPS MITM proxies (Proxyman, Charles Proxy, Fiddler) and self-hosted open-source toolkits (Device Farmer STF, mitmproxy, scrcpy, tapflow) thrive across independent developer desks and security teams demanding low latency, privacy compliance, and zero cloud lock-in.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Remote Device Debugging platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted remote device debugging and web inspection platforms sorted by parent company scale (revenue / market valuation, descending).
 
-### BrowserStack Remote Debugging
-**Type:** Real-device cloud with interactive debugging  
-BrowserStack provides interactive remote debugging on real devices and browsers, allowing inspection of DOM, console, and network requests through a cloud-hosted interface. It is the long-standing commercial standard for cross-browser debugging without maintaining an in-house device lab.
-
-### Proxyman
-**Type:** Native macOS HTTP debugging proxy  
-Proxyman is a polished, native macOS proxy for intercepting and inspecting HTTP/HTTPS traffic, with a modern UI, breakpoints, and map local/remote capabilities. It is a commercial alternative to Charles Proxy and Fiddler, popular among macOS developers.
-
-### Charles Proxy
-**Type:** Cross-platform HTTP debugging proxy  
-Charles Proxy is a long-standing commercial web debugging proxy for macOS, Windows, and Linux, supporting HTTP/HTTPS interception, breakpoints, and bandwidth throttling. It is frequently cited as the benchmark that open-source proxies like nectoproxy aim to replace [citation:4].
-
-### Fiddler
-**Type:** Web debugging proxy (Telerik)  
-Fiddler captures HTTP/HTTPS traffic for inspection and debugging, with a focus on Windows environments. It is commonly used alongside dedicated API clients for network-level debugging.
+| 🏢 Platform | 💰 Company Scale (Revenue / Valuation) | 💵 Starting Tier Pricing | 🎁 Free Tier / Free Trial Limits | 🔍 Core Debugging Capabilities | 🎯 Best For |
+|:---|:---|:---|:---|:---|:---|
+| [**BrowserStack Remote Debugging**](https://www.browserstack.com/live) | **~$4.0 Billion Valuation** (~$250M ARR) | **$29.00** / user / month (Live Desktop & Mobile, billed annually at $348/yr; or $39 month-to-month) | **Free Trial with 100 automated mobile testing minutes** and interactive test sessions; no perpetual free tier | Interactive real-device Chrome & Safari DevTools, DOM inspection, remote console, network HAR logging, and geo-location testing | Enterprise web and QA teams seeking instant access to 3,500+ real mobile devices and browsers without hardware upkeep |
+| [**Progress Fiddler Everywhere**](https://www.telerik.com/fiddler/fiddler-everywhere) | **~$1.8 Billion Market Cap** (~$1.0B TTM Revenue, NASDAQ: PRGS) | **$12.00** / user / month (Fiddler Everywhere Pro, billed annually at $144/yr) | **10-day fully functional free trial** (unlimited rule execution during trial); no permanent free tier | Cross-platform (macOS/Win/Linux) HTTPS decryption, live traffic tampering, API mocking, rule compose engine, and collaborative team workspaces | Cross-platform developers and QA engineers debugging REST/WebSocket traffic and API contracts |
+| [**Sauce Labs Real Device Cloud**](https://saucelabs.com/) | **~$90M–$250M ARR** (~$270M Total Raised across Series G) | **$39.00** / month (Live cross-browser testing; Real Device Cloud starting at $199/month billed annually) | **28-day free trial** (includes 60 automated & live testing minutes and 3 parallel test lanes); no permanent free tier | Remote interactive debugging on physical Android and iOS devices, live audio/video streaming, gesture replay, and ADB tunnel | QA automation teams requiring high-concurrency mobile testing pipelines integrated with CI/CD and automated failure analysis |
+| [**Proxyman**](https://proxyman.com/) | **Bootstrapped Indie ISV** (~$576K ARR, Proxyman LLC) | **$69.00** one-time purchase per seat (Personal License, includes 1 year of updates; $129 for Business License) | **Free Forever Tier limited to 1 active rule** (Breakpoints, Map Local, Map Remote capped at 1 domain/rule); 14-day full business trial | Native macOS Swift GUI, automatic 1-click certificate setup for iOS/Android emulators, SSL proxying, WebSocket & GraphQL inspector | macOS, iOS, and Android developers seeking a lightweight, modern alternative to legacy Java proxies |
+| [**Charles Proxy**](https://www.charlesproxy.com/) | **Bootstrapped Micro-ISV** (Privately held, XK72 Limited) | **$50.00** one-time purchase per user license (Charles 5.x perpetual license) | **30-day free trial** (application session automatically quits after 30 minutes of continuous execution); no permanent free tier | HTTP/HTTPS SSL proxy, request throttling (modem simulation), breakpoint request/response modification, and W3C validator | Developers looking for a battle-tested cross-platform proxy for deep protocol inspection and bandwidth throttling |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Remote Device Debugging and DevTools. The open-source ecosystem spans **real-device device farms**, **browser-based simulator access**, **HTTP debugging proxies**, **in-app WebView debuggers**, **ADB terminal interfaces**, and **iOS Safari remote debugging kits**.
+Self-hosted, community-driven remote device debugging tools, device farms, terminal dashboards, and MITM proxy utilities sorted by GitHub stars (descending).
 
-### Device Farmer STF
-**Stack:** Node.js / TypeScript / RethinkDB / ADB | **License:** Apache-2.0  
-Device Farmer STF (Smartphone Test Farm) is the leading open-source **real-device device farm** for Android, allowing teams to share and control physical devices remotely via a web interface [citation:15]. For remote debugging specifically, STF provides a **Remote Debug panel** that exposes an `adb connect` command; running it locally connects the remote device to your workstation, after which you can use `chrome://inspect` in Chrome or `opera:debug` in Opera to debug pages and WebViews on the device [citation:1]. It supports the full ADB workflow including shell, logcat, and file management through the web UI. Deployment via Docker Compose with RethinkDB is documented [citation:15].  
-**Best for:** Android QA teams wanting to share physical devices across a distributed team with genuine remote ADB debugging access, accepting the operational overhead of a full device farm.
-
-### tapflow
-**Stack:** Node.js / WebSocket / H.264 | **License:** MIT  
-tapflow is a self-hosted **BrowserStack alternative for mobile QA** that lets teams access iOS Simulators and Android Emulators running on their own Macs through a browser dashboard [citation:3]. It connects a relay server, a macOS agent that drives the simulators, and a browser dashboard for the rest of the team. Key differentiators include **no WebDriverAgent** (touch injection is direct), **no cloud uploads** (builds and streams stay on your infrastructure), and **H.264 streaming** for low latency. It also includes an MCP server for LLM agents and a deterministic flow runner. Requirements: macOS with Xcode for the agent, Node.js ≥20 for the relay, and ~512 MB RAM.  
-**Best for:** Mobile QA teams wanting browser-based access to their own simulators without uploading builds to a third-party cloud, accepting that agents must run on macOS.
-
-### nectoproxy
-**Stack:** Node.js / React | **License:** Open Source (npm)  
-nectoproxy is a **free, open-source alternative to Charles Proxy and Fiddler**, providing HTTP/HTTPS interception with a modern web UI [citation:4]. Key features include **MITM proxying** with auto-generated per-domain SSL certificates, real-time traffic monitoring via WebSocket, a **rules engine** with 8 actions (Mock, Block, Modify Request/Response, Map Local/Remote, Delay, Throttle), **breakpoints** for manual request/response editing, **network conditioning** (3G, slow Wi-Fi profiles), and **HAR import/export** with code generation in 7 languages. It runs on Node.js 20+ and installs via `npm install -g nectoproxy`. CA certificate installation instructions are provided for macOS, Windows, and Linux.  
-**Best for:** Developers wanting a modern, open-source HTTP debugging proxy with a rich rules engine and web UI, particularly those wanting to replace Charles Proxy or Fiddler without licensing costs.
-
-### Rockxy
-**Stack:** Native macOS (Swift) | **License:** Open Source  
-Rockxy is an open-source **native macOS HTTP debugging proxy** for intercepting HTTPS, inspecting APIs, mocking responses, and debugging WebSocket & GraphQL [citation:10]. It is positioned alongside Burp Suite, ZAP, and Requestly in the interception tool category, but with a focus on being a general-purpose native debugging proxy rather than a security testing suite. It supports MCP for AI client integration.  
-**Best for:** macOS developers wanting a native, open-source proxy alternative with a focus on API debugging and WebSocket/GraphQL inspection.
-
-### Remote WebView Debugger
-**Stack:** Go / WebSocket / MCP | **License:** Open Source  
-Remote WebView Debugger lets **AI agents debug WebViews inside apps and H5 pages on real users' phones over MCP** [citation:9]. A single script tag (or native injection) puts a page online; the user sees a small pill with a device code and can request assistance. Your agent (Claude Code, Cursor) then connects via MCP after user approval, reading accessibility snapshots, console, network, and screenshots, and clicking/typing/scrolling like a person. Admins can also open **real Chrome DevTools** on any online page. **User control is central:** the user sees what the AI is doing and can take over or end the session. Passwords, phone and card numbers are masked before leaving the device. Self-hosted as a single Go binary with SQLite or Postgres.  
-**Best for:** Teams wanting AI-assisted debugging of real user WebViews with strong privacy controls, particularly for production support scenarios.
-
-### adb-tui
-**Stack:** Go | **License:** Open Source  
-adb-tui is a **full-featured terminal UI and MCP server for Android Debug Bridge** [citation:6]. It provides 11 interactive views covering devices, shell, logcat, files, packages, port forwarding, input injection, processes, settings, and performance. It doubles as an **MCP server with 120+ tools**, allowing Claude or other agents to install apps, stream logs, capture screens, manage files, and control touch input autonomously. Wireless debugging (USB ↔ TCP/IP) is one key away. All shell commands use parameterized execution to avoid injection. Installable via Homebrew, script, Go, or pre-built binaries.  
-**Best for:** Android developers and QA engineers wanting a terminal-based ADB dashboard with AI agent integration, particularly for automation and remote device control.
-
-### ios-safari-remote-debug-kit
-**Stack:** Shell / WebKit WebInspector | **License:** Open Source  
-ios-safari-remote-debug-kit is a **free and open-source alternative to inspect.dev** for debugging iOS Safari from Windows or Linux [citation:13]. It downloads the latest WebKit WebInspector, patches it to work with `ios-webkit-debug-proxy`, and makes it compatible with Chromium-based browsers. Requirements include `ios-webkit-debug-proxy`, a Chromium or WebKit browser, and a USB-connected iOS device with Web Inspector enabled in Safari settings. Setup scripts (`generate.sh` or `generate.ps1`) handle the WebKit download and patching.  
-**Best for:** Developers on Windows or Linux needing to debug iOS Safari remotely without a Mac, accepting the USB tethering requirement and setup steps.
-
-### spy-debugger
-**Stack:** Node.js | **License:** Open Source  
-spy-debugger is a **one-stop remote network debugger** for mobile pages, supporting HTTP/HTTPS interception, WebView style debugging, and page debugging without requiring a USB connection [citation:2]. It has 8k+ GitHub stars and 825 forks, making it one of the more popular open-source remote debugging tools. It is particularly relevant for WeChat and WebView debugging scenarios common in Chinese mobile development.  
-**Best for:** Developers needing wireless remote debugging of mobile pages and WebViews, particularly in WeChat or similar embedded browser environments.
-
-### cdp-ninja
-**Stack:** Python / Chrome DevTools Protocol | **License:** Open Source (PyPI)  
-cdp-ninja is a **Chrome DevTools Protocol bridge** that exposes 89 endpoints across 14 domains for direct browser control [citation:5]. It is explicitly positioned as a **browser hacking framework for security testing and chaos engineering**, with no input validation, no rate limiting, and raw CDP access. It includes remote deployment features: `--tunnel` for SSH tunneling, `--install-agents` for remote agent deployment, and `--invoke-claude` for remote AI interface access. **Critical warning:** The project explicitly states it is intentionally dangerous and should only be used in secure, isolated environments for authorized testing.  
-**Best for:** Security researchers and chaos engineers wanting raw, unrestricted CDP access for deliberate testing, not for production debugging workflows.
+| 📦 Project | ⭐ GitHub Stars | 📜 License | 🛠️ Tech Stack | 🔍 Primary Architecture & Focus | 🎯 Best For |
+|:---|:---:|:---|:---|:---|:---|
+| [**Genymobile/scrcpy**](https://github.com/Genymobile/scrcpy) | [![GitHub stars](https://img.shields.io/github/stars/Genymobile/scrcpy?style=social&color=white)](https://github.com/Genymobile/scrcpy/stargazers) | Apache-2.0 | C / Java / ADB | Display and control Android devices over USB or TCP/IP with ultra-low latency (35~70ms) and high performance | High-performance remote Android screen mirroring, tactile interaction, and wireless clipboard/audio forwarding |
+| [**mitmproxy/mitmproxy**](https://github.com/mitmproxy/mitmproxy) | [![GitHub stars](https://img.shields.io/github/stars/mitmproxy/mitmproxy?style=social&color=white)](https://github.com/mitmproxy/mitmproxy/stargazers) | MIT | Python / Rust | Interactive, SSL/TLS-capable intercepting proxy for HTTP/1, HTTP/2, and WebSockets with console, web, and Python API interfaces | Penetration testers, network analysts, and backend engineers inspecting mobile API calls and writing automated traffic hooks |
+| [**appium/appium**](https://github.com/appium/appium) | [![GitHub stars](https://img.shields.io/github/stars/appium/appium?style=social&color=white)](https://github.com/appium/appium/stargazers) | Apache-2.0 | Node.js / TypeScript | Cross-platform test automation framework for native, hybrid, and mobile web apps on iOS, Android, and desktop | Automated end-to-end device testing, remote UI automation, and driver-agnostic mobile session management |
+| [**liriliri/eruda**](https://github.com/liriliri/eruda) | [![GitHub stars](https://img.shields.io/github/stars/liriliri/eruda?style=social&color=white)](https://github.com/liriliri/eruda/stargazers) | MIT | JavaScript | Console, DOM tree inspector, network monitor, and storage manager running directly inside in-app mobile web browsers | In-browser frontend debugging on mobile devices when USB cables and remote devtools protocols cannot be attached |
+| [**Tencent/vConsole**](https://github.com/Tencent/vConsole) | [![GitHub stars](https://img.shields.io/github/stars/Tencent/vConsole?style=social&color=white)](https://github.com/Tencent/vConsole/stargazers) | MIT | TypeScript | Lightweight, embeddable developer companion tool for mobile front-end web pages and hybrid mobile applications | Quick on-device logging, network inspection, and system metrics debugging within mobile web and hybrid containers |
+| [**avwo/whistle**](https://github.com/avwo/whistle) | [![GitHub stars](https://img.shields.io/github/stars/avwo/whistle?style=social&color=white)](https://github.com/avwo/whistle/stargazers) | MIT | Node.js | Cross-platform web debugging proxy tool based on Node.js with declarative pattern-matching rules and WebSocket support | Complex HTTP/HTTPS capture, URL rewriting, mock responders, and multi-platform webview debugging |
+| [**DeviceFarmer/stf**](https://github.com/DeviceFarmer/stf) | [![GitHub stars](https://img.shields.io/github/stars/DeviceFarmer/stf?style=social&color=white)](https://github.com/DeviceFarmer/stf/stargazers) | Apache-2.0 | Node.js / RethinkDB / ADB | Open-source Smartphone Test Farm (STF) for controlling physical Android devices remotely via a browser, with live `adb connect` tunnels | QA teams and distributed engineering orgs sharing real Android device hardware with authentic remote Chrome DevTools access |
+| [**wuchangming/spy-debugger**](https://github.com/wuchangming/spy-debugger) | [![GitHub stars](https://img.shields.io/github/stars/wuchangming/spy-debugger?style=social&color=white)](https://github.com/wuchangming/spy-debugger/stargazers) | MIT | Node.js | One-stop wireless mobile network debugger supporting HTTP/HTTPS interception, page debugging, and WebView element inspection | Wireless mobile page and WebView inspection without requiring tethered USB cables |
+| [**requestly/requestly**](https://github.com/requestly/requestly) | [![GitHub stars](https://img.shields.io/github/stars/requestly/requestly?style=social&color=white)](https://github.com/requestly/requestly/stargazers) | MIT / Elastic | TypeScript / Node.js | Open-source API and web debugging client for intercepting, modifying, and mocking network requests on browsers and mobile devices | Intercepting, redirecting, and mocking production mobile and web network traffic directly on remote devices |
+| [**google/ios-webkit-debug-proxy**](https://github.com/google/ios-webkit-debug-proxy) | [![GitHub stars](https://img.shields.io/github/stars/google/ios-webkit-debug-proxy?style=social&color=white)](https://github.com/google/ios-webkit-debug-proxy/stargazers) | BSD-3-Clause | C | DevTools proxy that enables Chrome DevTools UI to inspect iOS Safari and UIWebViews on real devices over USB | Connecting standard DevTools protocols to real iOS devices from Linux, Windows, or macOS |
+| [**RemoteDebug/remotedebug-ios-webkit-adapter**](https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter) | [![GitHub stars](https://img.shields.io/github/stars/RemoteDebug/remotedebug-ios-webkit-adapter?style=social&color=white)](https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter/stargazers) | MIT | TypeScript | Protocol adapter that exposes iOS WebKit Remote Debugging via the standard Chrome DevTools Protocol (CDP) | Debugging iOS Safari and hybrid apps using modern Chrome DevTools, VS Code, and Playwright |
+| [**jo-duchan/tapflow**](https://github.com/jo-duchan/tapflow) | [![GitHub stars](https://img.shields.io/github/stars/jo-duchan/tapflow?style=social&color=white)](https://github.com/jo-duchan/tapflow/stargazers) | MIT | Node.js / WebSocket / H.264 | Self-hosted BrowserStack alternative for streaming local iOS Simulators and Android Emulators over the web with direct touch injection | In-house mobile QA teams seeking cloud-free browser access to Mac-hosted iOS and Android simulators |
+| [**appium/appium-inspector**](https://github.com/appium/appium-inspector) | [![GitHub stars](https://img.shields.io/github/stars/appium/appium-inspector?style=social&color=white)](https://github.com/appium/appium-inspector/stargazers) | Apache-2.0 | Electron / React | Visual GUI inspector for mobile app UI hierarchies, locator generation, and live interactive device interaction | Exploring and debugging native/hybrid application DOM hierarchies and crafting automated test selectors |
+| [**RockxyApp/Rockxy**](https://github.com/RockxyApp/Rockxy) | [![GitHub stars](https://img.shields.io/github/stars/RockxyApp/Rockxy?style=social&color=white)](https://github.com/RockxyApp/Rockxy/stargazers) | Open Source | Swift (macOS) | Native macOS HTTP/HTTPS debugging proxy for API inspection, response mocking, WebSocket/GraphQL debugging, and MCP agent control | macOS engineers wanting a snappy native proxy for inspecting GraphQL, WebSockets, and mock responses |
+| [**HimbeersaftLP/ios-safari-remote-debug-kit**](https://github.com/HimbeersaftLP/ios-safari-remote-debug-kit) | [![GitHub stars](https://img.shields.io/github/stars/HimbeersaftLP/ios-safari-remote-debug-kit?style=social&color=white)](https://github.com/HimbeersaftLP/ios-safari-remote-debug-kit/stargazers) | Open Source | Shell / PowerShell | Free open-source alternative to inspect.dev for debugging iOS Safari and WebViews from Windows and Linux | Cross-platform web developers debugging real iPhone and iPad Safari sessions without a Mac workstation |
+| [**ZaneL1u/remote-webview-debugger**](https://github.com/ZaneL1u/remote-webview-debugger) | [![GitHub stars](https://img.shields.io/github/stars/ZaneL1u/remote-webview-debugger?style=social&color=white)](https://github.com/ZaneL1u/remote-webview-debugger/stargazers) | Open Source | Go / WebSocket / MCP | Autonomous AI agent remote debugging bridge for mobile WebViews with consent-driven PII masking and Chrome DevTools back-channel | AI-assisted debugging of elusive end-user mobile WebView bugs directly in production apps |
+| [**alanisme/adb-tui**](https://github.com/alanisme/adb-tui) | [![GitHub stars](https://img.shields.io/github/stars/alanisme/adb-tui?style=social&color=white)](https://github.com/alanisme/adb-tui/stargazers) | MIT | Go | Terminal UI dashboard and MCP server for Android Debug Bridge with 11 interactive views and 1-key wireless TCP/IP toggling | Terminal-centric developers and automated AI agents managing multi-device Android fleets |
+| [**sitharaj88/nectoproxy**](https://github.com/sitharaj88/nectoproxy) | [![GitHub stars](https://img.shields.io/github/stars/sitharaj88/nectoproxy?style=social&color=white)](https://github.com/sitharaj88/nectoproxy/stargazers) | Open Source | Node.js / React | Open-source MITM proxy with Web UI, per-domain auto-SSL certificates, 8-action rules engine, and network conditioning | Web developers seeking an open-source Charles/Fiddler replacement with HAR export and zero license fees |
 
 ---
 
-## 📊 Comparison at a Glance
+## ⚖️ Comparison at a Glance
 
-| Software | License | Stack | Primary Focus | Real Device | Self-Hosted | Best For |
-|----------|---------|-------|---------------|-------------|-------------|----------|
-| **BrowserStack** | Proprietary | Cloud | Real-device debugging | ✅ | ❌ | Cross-browser debugging |
-| **Proxyman** | Proprietary | macOS | HTTP proxy | ❌ | ❌ | Native macOS proxy |
-| **Device Farmer STF** | Apache-2.0 | Node.js/ADB | Android device farm | ✅ Physical | ✅ | Shared Android devices + ADB |
-| **tapflow** | MIT | Node.js | Simulator access | ❌ (Sims) | ✅ | Browser access to simulators |
-| **nectoproxy** | Open Source | Node.js | HTTP proxy | ❌ | ✅ | Charles/Fiddler replacement |
-| **Rockxy** | Open Source | Swift (macOS) | HTTP proxy | ❌ | ✅ | Native macOS proxy |
-| **Remote WebView** | Open Source | Go | AI agent WebView debug | ✅ (Real users) | ✅ | AI-assisted production debug |
-| **adb-tui** | Open Source | Go | ADB terminal + MCP | ✅ (ADB) | ✅ | Terminal ADB dashboard |
-| **ios-safari-kit** | Open Source | Shell | iOS Safari debug | ✅ (USB) | ✅ | Windows/Linux iOS debugging |
-| **spy-debugger** | Open Source | Node.js | Wireless mobile debug | ✅ (Wireless) | ✅ | WeChat/WebView debugging |
-| **cdp-ninja** | Open Source | Python | Raw CDP bridge | (Browser) | ✅ | Security/chaos testing |
+| 🛠️ Software | 📜 License | 💻 Stack | 🎯 Primary Focus | 📱 Real Device Access | 🏠 Self-Hosted | 💡 Recommended For |
+|:---|:---|:---|:---|:---:|:---:|:---|
+| **BrowserStack** | Commercial | Cloud SaaS | Real-device cross-browser testing | ✅ Physical Cloud | ❌ | High-coverage automated & interactive enterprise QA |
+| **Progress Fiddler** | Commercial | Electron / .NET | Cross-platform HTTP/HTTPS proxy | ❌ | ❌ | Windows and multi-platform network traffic tampering |
+| **Sauce Labs** | Commercial | Cloud SaaS | Enterprise device cloud & automation | ✅ Physical Cloud | ❌ | High-concurrency CI/CD mobile testing suites |
+| **Proxyman** | Commercial | Native Swift | macOS HTTP/HTTPS debugging proxy | ❌ (Sim/Device Proxy) | ❌ | Fast native Apple ecosystem traffic inspection |
+| **Charles Proxy** | Commercial | Java | Cross-platform web debugging proxy | ❌ (Proxy only) | ❌ | Legacy cross-platform network protocol validation |
+| **Genymobile/scrcpy** | Apache-2.0 | C / Java | Android screen mirror & control | ✅ Physical (USB/WiFi) | ✅ | Ultra-fast local/remote Android mirroring & input |
+| **mitmproxy** | MIT | Python / Rust | Interactive terminal & web MITM proxy | ❌ (Proxy only) | ✅ | Scriptable traffic tampering and pentesting |
+| **appium** | Apache-2.0 | TypeScript | Cross-platform mobile automation | ✅ Real & Virtual | ✅ | Standardized WebDriver mobile test suites |
+| **Device Farmer STF** | Apache-2.0 | Node.js / ADB | Android physical device farm | ✅ Physical Android | ✅ | Distributed teams sharing a private device pool |
+| **avwo/whistle** | MIT | Node.js | Multi-platform web debugging proxy | ❌ (Proxy only) | ✅ | Rule-based proxying and mock API generation |
+| **tapflow** | MIT | Node.js | Local simulator web streaming | ❌ (Simulators only) | ✅ | Private in-house Mac simulator access without cloud fees |
+| **Remote WebView** | Open Source | Go / MCP | AI-driven in-app WebView debugging | ✅ Real Users | ✅ | Remote production WebView troubleshooting with privacy |
+| **adb-tui** | MIT | Go | Terminal UI & MCP bridge for ADB | ✅ Physical & Emulators | ✅ | Command-line power users and AI agent device control |
+| **ios-safari-kit** | Open Source | Shell / WebKit | iOS Safari debugging on Win/Linux | ✅ Physical iOS | ✅ | Inspecting iPhone Safari without owning a Mac |
+
+---
+
+## 💖 Support
+
+Thank you so much for exploring and supporting **Awesome Remote Device Debugging & DevTools**! 🙏
+
+If you find this repository valuable:
+- ⭐ **Star** this repository to show your appreciation and help fellow developers discover it.
+- 🍴 **Fork** it to keep your own reference and contribute new tools back to the community.
+- 📢 **Share** it with your engineering team, QA specialists, and mobile developer communities.
+- ☕ **Buy me a coffee / Sponsor:** If you would like to support ongoing curation and maintenance of developer tooling lists, consider sponsoring via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Remote-Device-Debugging-Devtools&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Remote-Device-Debugging-Devtools&type=date&legend=top-left)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Remote Device Debugging or DevTools platform that should be listed here, please open a pull request with:
+Contributions are always welcome! If you know of an open-source or hosted tool that belongs in this directory:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **real-device access** (Device Farmer STF for shared Android devices with ADB debugging [citation:1][citation:15]), **simulator access** (tapflow for browser-based iOS/Android simulators [citation:3]), **HTTP debugging proxies** (nectoproxy, Rockxy [citation:4][citation:10]), **AI-assisted in-app debugging** (Remote WebView Debugger [citation:9]), and **platform-specific bridges** (ios-safari-remote-debug-kit for iOS on Windows/Linux [citation:13], adb-tui for Android terminal control [citation:6]). **nectoproxy** is the most complete open-source Charles/Fiddler replacement with a modern web UI and rich rules engine, while **Device Farmer STF** remains the standard for shared Android device farms with genuine remote ADB access.
+1. 🍴 **Fork** the repository.
+2. 🌿 **Create a new feature branch** (`git checkout -b feature/add-new-devtools`).
+3. 📝 **Add your project** in the appropriate section maintaining tabular consistency, star count badges, and exact pricing/limits.
+4. 🚀 **Submit a Pull Request** with a concise description of why the tool stands out.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This compilation is released under the [Creative Commons Zero v1.0 Universal (CC0 1.0)](LICENSE) (Public Domain Dedication).  
+All listed software tools and trademarks retain their respective copyrights and licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+  <sub>Maintained with ❤️ for software developers, QA engineers, and mobile specialists worldwide.</sub><br>
+  <b><a href="#-awesome-remote-device-debugging--devtools-️">⬆️ Back to Top</a></b>
+</div>
